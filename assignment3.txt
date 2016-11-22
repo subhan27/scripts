@@ -5,9 +5,11 @@ However, it is possible with 1 load balancer but as per our requirement we need 
 2 x server load balancer (HA proxy)
 2 x web server (Apache)
 2 x application (Tomcat etc)
-Load balancing is a set of techniques that configure the servers and other hardware in such a way that the workload is distributed equally amongst the servers, thereby reducing the dependency on any single server and making it easy to add resources in such a way that performance is scaled according to the resources added. 
+Load balancing is a set of techniques that configure the servers and other hardware in such a way that the workload is distributed equally amongst the servers,
+thereby reducing the dependency on any single server and making it easy to add resources in such a way that performance is scaled according to the resources added. 
 A load balancer checks the utilization of all servers in a cluster. 
-We will need two servers for the load balancers have to be built using the Load Balancer Appliance template. It acts as master/slave load balancer. The slave server keeps checking master server heartbeat at all times. If the master server is found to be down, then the load balancer IP address is automatically routed on to the slave server. 
+We will need two servers for the load balancers have to be built using the Load Balancer Appliance template. 
+It acts as master/slave load balancer. The slave server keeps checking master server heartbeat at all times. If the master server is found to be down, then the load balancer IP address is automatically routed on to the slave server. 
 This process won't incur downtime of even a second. The MySQL Cluster management node is setup on both load balancer servers. 
 Minimum two servers for the application servers should be built and minimum two web servers will be required.
 This environment wont have single points of failure and it provides the all of the other reliability and performance benefits.
