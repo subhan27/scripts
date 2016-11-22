@@ -2,7 +2,7 @@
 As this is a three tier app which include web server, app server and database, we will need to setup a clusters with high avalaibility.
 In order to setup a cluster with no single point of failure and fault tolerant below is the list of required servers.
 However, it is possible with 1 load balancer but as per our requirement we need to setup the cluster with no single point of failure.
-4 x server load balancer (HA proxy)
+2 x server load balancer (HA proxy)
 2 x web server (Apache)
 2 x application (Tomcat etc)
 Load balancing is a set of techniques that configure the servers and other hardware in such a way that the workload is distributed equally amongst the servers, thereby reducing the dependency on any single server and making it easy to add resources in such a way that performance is scaled according to the resources added. A load balancer checks the utilization of all servers in a cluster. 
